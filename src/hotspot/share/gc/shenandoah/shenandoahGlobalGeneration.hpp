@@ -42,7 +42,6 @@ public:
   size_t used_regions() const override;
   size_t used_regions_size() const override;
   size_t available() const override;
-  size_t soft_available() const override;
 
   void set_concurrent_mark_in_progress(bool in_progress) override;
 

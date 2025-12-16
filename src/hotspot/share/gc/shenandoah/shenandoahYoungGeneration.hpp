@@ -74,10 +74,7 @@ public:
   }
 
   size_t available() const override;
-
-  // Do not override available_with_reserve() because that needs to see memory reserved for Collector
-
-  size_t soft_available() const override;
+  size_t soft_mutator_available() const override;
 
   void prepare_gc() override;
 };
